@@ -60,13 +60,34 @@ li{
     list-style: none;
 }
 #tuto{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     left: 50%;
     bottom: 30px;
     transform: translateX(-50%);
     font-family: sans-serif;
 }
-
+.input-random{
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+.input-random label{
+    margin-left: 5px;
+}
+input[type="checkbox"]:checked {
+    background: yellow;
+    margin:0px;
+    position: relative;
+    &:before {
+      font-family: FontAwesome;
+      content: '\f00c';
+      display: block;
+      color: grey;
+      font-size: 13px;
+      position: absolute;
+    }
+  }
 
 /* titre chapitre */
 .content-txt{
@@ -77,6 +98,7 @@ li{
     user-select: none;
     text-align: center;
     margin: 30px;
+    max-width: 900px;
 }
 .content-txt > h2{
     display: flex;
@@ -86,7 +108,7 @@ li{
     padding-bottom: 10px;
     /* border-bottom: 2px solid var(--color-border); */
 }
-.content-txt .char{
+.content-txt .char, h1{
     font-family: "Anybody";
     text-transform: uppercase;
     font-variation-settings: "wght" var(--wghtFont), "wdth" var(--wdthFont), "slnt" var(--slntFont);
