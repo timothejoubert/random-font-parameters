@@ -67,6 +67,7 @@ li{
     bottom: 30px;
     transform: translateX(-50%);
     font-family: sans-serif;
+    z-index: 2;
 }
 .input-random{
     margin: 10px 0;
